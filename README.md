@@ -44,6 +44,19 @@ Oyun içerisindeki tüm itemlerin barındığı genel tablodur. Bu tablo içeris
 ```
 {% endcode %}
 
+#### ItemTypes Tablosu
+
+Items tablosundaki ItemTypeId ile ilişkiseldir. Items tablosundaki Item nesnesinin genel niteliğini belirler. Buna örnek olarak aşağıdaki fotoğraflara bakabilirsiniz.
+
+{% code lineNumbers="true" fullWidth="true" %}
+```
+  [Name]            (nvarchar)    -> Item Türü (Zırh, Silah, Kolye, Yüzük, Ayakkabı vs.)
+  [Types]           (nvarchar)    -> Item Tipi (Ağır, Hafif, Menzilli vs.)
+```
+{% endcode %}
+
+<figure><img src=".gitbook/assets/Ekran görüntüsü 2024-02-16 221303 (3).png" alt=""><figcaption><p>Items, ItemTypes ve ItemStats tablosu ile ilgilidir.</p></figcaption></figure>
+
 #### ItemStats Tablosu
 
 Items tablosundaki ItemStatsId ile ilişkiseldir. Items tablosundaki Item nesnesinin temel özelliklerini barındırır. Bu özellikler oyun içerisindeki her itemde olduğu gibi bazı itemlerde olmayadabilir. Bu nedenle veritabanı yapısına göre her zaman boş değerlerde (0) alabilir.
@@ -52,8 +65,9 @@ Items tablosundaki ItemStatsId ile ilişkiseldir. Items tablosundaki Item nesnes
 ```sql
   [Attack]            (float)    -> Item Nesnesinin Vuruş Hasarı
   [Defense]           (float)    -> Item Nesnesinin Savunma Miktarı
-  [SVH]               (float)    -> 
+  [AttackSpeed]       (float)    -> ItemSaldırı Hızı 
   [CriticalHitPerc]   (float)    -> Item Nesnesinin Kritik Vurma İhtimali.
   [Durability]        (int)      -> Item Nesnesinin Eskime oranı.
 ```
 {% endcode %}
+
