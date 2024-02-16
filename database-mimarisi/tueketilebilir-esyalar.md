@@ -12,10 +12,16 @@ description: >-
 Sayfa İçeriği
 
 * [Tüketilebilir Ürünler](tueketilebilir-esyalar.md#consumables-tablosu)
-* [Zamanlı Etkiler](tueketilebilir-esyalar.md#consumabletimedeffects-tablosu)
+* [Tüketilebilir Ürün Etki Eşleştirici](tueketilebilir-esyalar.md#consumableeffectmapper-tablosu)
+* [Tüketilebilir Ürün Etki Türleri](tueketilebilir-esyalar.md#consumableeffecttypes-tablosu)
 * [Anlık Etkiler](tueketilebilir-esyalar.md#consumableimpacteffects-tablosu)
-* Tüketilebilir Ürün Etki Türleri
-* Tüketilebilir Ürün Etki Eşleştirici
+* [Zamanlı Etkiler](tueketilebilir-esyalar.md#consumabletimedeffects-tablosu)
+
+
+
+
+
+
 
 #### Consumables Tablosu
 
