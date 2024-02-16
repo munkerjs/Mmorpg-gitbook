@@ -7,13 +7,13 @@ description: >-
 
 # 🍹 Tüketilebilir Eşyalar
 
-### &#x20;Consumable, Effect, ve ConsumableEffectMapper Tabloları
+### Consumable, Effect, ve ConsumableEffectMapper Tabloları
 
 Sayfa İçeriği
 
-* Tüketilebilir Ürünler
-* Zamanlı Etkiler
-* Etki Etkileri
+* [Tüketilebilir Ürünler](tueketilebilir-esyalar.md#consumables-tablosu)
+* [Zamanlı Etkiler](tueketilebilir-esyalar.md#consumabletimedeffects-tablosu)
+* [Anlık Etkiler](tueketilebilir-esyalar.md#consumableimpacteffects-tablosu)
 * Tüketilebilir Ürün Etki Türleri
 * Tüketilebilir Ürün Etki Eşleştirici
 
@@ -29,7 +29,7 @@ Tüketilebilir Ürünler tablosu, oyundaki tüketilebilir ürünler hakkında bi
 ```
 {% endcode %}
 
-####
+
 
 #### ConsumableEffectMapper Tablosu
 
@@ -44,7 +44,7 @@ Tüketilebilir Ürün Etki Eşleştirici tablosu, tüketilebilir ürünleri tük
 
 
 
-**ConsumableEffectTypes Tablosu**
+#### **ConsumableEffectTypes Tablosu**
 
 Etki Tipleri tablosu, bir tüketilebilir ürün tükettiklerinde oyunculara uygulanabilen etki tipleri hakkında bilgi depolar. Her etki etkisinin benzersiz bir kimliği ve bir tip kodu vardır.
 
@@ -57,7 +57,7 @@ Etki Tipleri tablosu, bir tüketilebilir ürün tükettiklerinde oyunculara uygu
 
 
 
-**ConsumableImpactEffects Tablosu**
+#### **ConsumableImpactEffects Tablosu**
 
 Tüketilebilir Etki Etkileri tablosu, oyuncular bir tüketilebilir ürün tükettiğinde onlara uygulanabilen etki etkileri hakkında bilgi depolar. Her etki etkisinin benzersiz bir kimliği ve bir tür kodu vardır.
 
@@ -72,7 +72,7 @@ Tüketilebilir Etki Etkileri tablosu, oyuncular bir tüketilebilir ürün tüket
 
 
 
-**ConsumableTimedEffects Tablosu**
+#### **ConsumableTimedEffects Tablosu**
 
 Zamanlı Etkiler tablosu, bir tüketilebilir ürün tükettiklerinde oyunculara uygulanabilen zamanlı etkiler hakkında bilgi depolar. Her zamanlı etkinin benzersiz bir kimliği, bir tür kodu, bir değer ve saniye cinsinden bir süre vardır.
 
