@@ -53,7 +53,7 @@ Items tablosundaki ItemStatsId ile ilişkiseldir. Items tablosundaki Item nesnes
   [Attack]            (float)    -> Item Nesnesinin Vuruş Hasarı
   [Defense]           (float)    -> Item Nesnesinin Savunma Miktarı
   [SVH]               (float)    -> 
-  [CriticalHitPerc]   (float)
-  [Durability]        (int)
+  [CriticalHitPerc]   (float)    -> Item Nesnesinin Kritik Vurma İhtimali.
+  [Durability]        (int)      -> Item Nesnesinin Eskime oranı.
 ```
 {% endcode %}
