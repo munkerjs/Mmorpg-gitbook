@@ -9,6 +9,7 @@ Bu sayfa içerisinde MMORPG yaparken uygulanabilecek temel Tablo yapısı ve ara
 #### Kullanılacak Frameworkler
 
 * EntityFramework
+* RabbitMQ
 
 #### Itemler için Tablo Yapısı
 
@@ -26,7 +27,7 @@ Bu sayfa içerisinde MMORPG yaparken uygulanabilecek temel Tablo yapısı ve ara
 
 Oyun içerisindeki tüm itemlerin barındığı genel tablodur. Bu tablo içerisinde oyunda hem Enemy hemde Klan üyelerinden düşecek tüm itemler mevcuttur. Eğer oyuna yeni bir item eklenecekse önce bu tabloya eklenmelidir.&#x20;
 
-{% code lineNumbers="true" fullWidth="true" %}
+{% code title="Items" lineNumbers="true" fullWidth="true" %}
 ```sql
   [Name]             (nvarchar)   -> Item Adı
   [Rarity]           (int)        -> Item Değerliliği (Nadide, Şaheser, Efsanevi vs.)
@@ -51,7 +52,7 @@ Oyun içerisindeki tüm itemlerin barındığı genel tablodur. Bu tablo içeris
 
 Items tablosundaki ItemTypeId ile ilişkiseldir. Items tablosundaki Item nesnesinin genel niteliğini belirler. Buna örnek olarak aşağıdaki fotoğraflara bakabilirsiniz.
 
-{% code lineNumbers="true" fullWidth="true" %}
+{% code title="ItemTypes " lineNumbers="true" fullWidth="true" %}
 ```
   [Name]            (nvarchar)    -> Item Türü (Zırh, Silah, Kolye, Yüzük, Ayakkabı vs.)
   [Types]           (nvarchar)    -> Item Tipi (Ağır, Hafif, Menzilli vs.)
@@ -64,7 +65,7 @@ Items tablosundaki ItemTypeId ile ilişkiseldir. Items tablosundaki Item nesnesi
 
 Items tablosundaki ItemStatsId ile ilişkiseldir. Items tablosundaki Item nesnesinin temel özelliklerini barındırır. Bu özellikler oyun içerisindeki her itemde olduğu gibi bazı itemlerde olmayadabilir. Bu nedenle veritabanı yapısına göre her zaman boş değerlerde (0) alabilir.
 
-{% code lineNumbers="true" fullWidth="true" %}
+{% code title="ItemStats " lineNumbers="true" fullWidth="true" %}
 ```sql
   [Attack]            (float)    -> Item Nesnesinin Vuruş Hasarı
   [Defense]           (float)    -> Item Nesnesinin Savunma Miktarı
@@ -78,7 +79,7 @@ Items tablosundaki ItemStatsId ile ilişkiseldir. Items tablosundaki Item nesnes
 
 Items tablosundaki ItemSettingsId ile ilişkiseldir. Item'ın envanter içerisindeki düzeni ile alakalı bilgilerin / ayarların barındığı tablodur. Her Item nesnesi için ayrı ayrı özellikler barındırır. Örneğin; envanterde 1 slotta kaç adet olacağı veya bölünebilir bir item olup olmadığının ayarı buradan yönetilir.
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
+{% code title="ItemSettings " lineNumbers="true" fullWidth="true" %}
 ```sql
   [Unique]          (bit)        -> Aynı Anda Birden Fazla Kopyası Taşınamaz.
   [Stackable]       (bit)        -> Birden Fazla Kopyası Aynı Slota Taşınabilir.
@@ -89,7 +90,7 @@ Items tablosundaki ItemSettingsId ile ilişkiseldir. Item'ın envanter içerisin
 
 Items tablosundaki InformationsId değeri ile ilişkisel olup item hakkında açıklama, NPC bilgileri veya oyuncuya yönelik bilgilendirici mesajların detaylarını barındıran tablodur.&#x20;
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
+{% code title="ItemAdditionalInformations " lineNumbers="true" fullWidth="true" %}
 ```sql
   [Description]       (nvarchar)    -> Item Açıklaması
   [Icon]              (nvarchar)    -> Item Resmi
@@ -101,7 +102,7 @@ Items tablosundaki InformationsId değeri ile ilişkisel olup item hakkında aç
 
 Items tablosundaki EfsunId ile ilişkiseldir. Item nesnelerinin aldığı özelliklerin bulunduğu Mapping tablosudur diyebiliriz. Bu tablo içerisinde silaha atanan efsunun adı ve efsun grubunun Id değeri tutulur. Bu sayede bir iteme birden fazla efsun eklemesi yapılabilir. Oyuna yeni bir efsun eklenecekse bu tablodan eklenebilir. Fakat bu tablo düzgün kullanılmazsa oyunun dengesi değişebilir :)
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
+{% code title="Efsuns " lineNumbers="true" fullWidth="true" %}
 ```sql
    [Name]              (nvarchar)    -> Efsun Adı
    [EfsunStatsId]      (int)         -> Efsun Grubu ID değeri      
@@ -112,7 +113,7 @@ Items tablosundaki EfsunId ile ilişkiseldir. Item nesnelerinin aldığı özell
 
 Efsuns tablosundaki EfsunStatsId ile ilişkiseldir. Efsun grubu oluşturmanızı sağlar. Bu sayede bir item nesnesine atanan efsunlar ile oyun içerisindeki tüm dengeleri değiştirebilirsiniz :)
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
+{% code title="EfsunStats " lineNumbers="true" fullWidth="true" %}
 ```
    [Value]              (float)    -> Örn: 5000 Can Veren bir itemse 5000 yapılır.
    [EnumType]           (int)      -> (0)Enemy, (1)Player (Kimi Öldürmek / Kurtarmak İçin Yaratılmışsa)
