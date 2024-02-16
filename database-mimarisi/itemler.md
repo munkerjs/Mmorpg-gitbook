@@ -13,17 +13,17 @@ Bu sayfa içerisinde MMORPG yaparken uygulanabilecek temel Tablo yapısı ve ara
 
 #### Itemler için Tablo Yapısı
 
-* Items
-* ItemStats
-* ItemTypes
-* ItemSettings
-* ItemAdditionalInformations
-* Efsuns
-* EfsunStats
+* [Items](itemler.md#items-tablosu)
+* [ItemTypes](itemler.md#itemtypes-tablosu)
+* [ItemStats](itemler.md#itemstats-tablosu)
+* [ItemSettings](itemler.md#itemsettings-tablosu)
+* [ItemAdditionalInformations](itemler.md#itemadditionalinformations-tablosu)
+* [Efsuns](itemler.md#efsuns-tablosu)
+* [EfsunStats](itemler.md#efsunstats-tablosu)
 
 #### Tabloların Anlamları ve Çalışma Mantıkları
 
-**Items Tablosu**
+#### **Items Tablosu**
 
 Oyun içerisindeki tüm itemlerin barındığı genel tablodur. Bu tablo içerisinde oyunda hem Enemy hemde Klan üyelerinden düşecek tüm itemler mevcuttur. Eğer oyuna yeni bir item eklenecekse önce bu tabloya eklenmelidir.&#x20;
 
@@ -86,7 +86,7 @@ Items tablosundaki ItemSettingsId ile ilişkiseldir. Item'ın envanter içerisin
 ```
 {% endcode %}
 
-**ItemAdditionalInformations Tablosu**
+#### **ItemAdditionalInformations Tablosu**
 
 Items tablosundaki InformationsId değeri ile ilişkisel olup item hakkında açıklama, NPC bilgileri veya oyuncuya yönelik bilgilendirici mesajların detaylarını barındıran tablodur.&#x20;
 
@@ -98,7 +98,7 @@ Items tablosundaki InformationsId değeri ile ilişkisel olup item hakkında aç
 ```
 {% endcode %}
 
-**Efsuns Tablosu**
+#### **Efsuns Tablosu**
 
 Items tablosundaki EfsunId ile ilişkiseldir. Item nesnelerinin aldığı özelliklerin bulunduğu Mapping tablosudur diyebiliriz. Bu tablo içerisinde silaha atanan efsunun adı ve efsun grubunun Id değeri tutulur. Bu sayede bir iteme birden fazla efsun eklemesi yapılabilir. Oyuna yeni bir efsun eklenecekse bu tablodan eklenebilir. Fakat bu tablo düzgün kullanılmazsa oyunun dengesi değişebilir :)
 
@@ -109,7 +109,7 @@ Items tablosundaki EfsunId ile ilişkiseldir. Item nesnelerinin aldığı özell
 ```
 {% endcode %}
 
-**EfsunStats Tablosu**
+#### **EfsunStats Tablosu**
 
 Efsuns tablosundaki EfsunStatsId ile ilişkiseldir. Efsun grubu oluşturmanızı sağlar. Bu sayede bir item nesnesine atanan efsunlar ile oyun içerisindeki tüm dengeleri değiştirebilirsiniz :)
 
