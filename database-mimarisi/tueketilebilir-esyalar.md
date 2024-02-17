@@ -11,11 +11,11 @@ description: >-
 
 Sayfa İçeriği
 
-* [Tüketilebilir Ürünler](consumables.md#consumables-tablosu)
-* [Tüketilebilir Ürün Etki Eşleştirici](consumables.md#consumableeffectmapper-tablosu)
-* [Tüketilebilir Ürün Etki Türleri](consumables.md#consumableeffecttypes-tablosu)
-* [Anlık Etkiler](consumables.md#consumableimpacteffects-tablosu)
-* [Zamanlı Etkiler](consumables.md#consumabletimedeffects-tablosu)
+* [Tüketilebilir Ürünler](tueketilebilir-esyalar.md#consumables-tablosu)
+* [Tüketilebilir Ürün Etki Eşleştirici](tueketilebilir-esyalar.md#consumableeffectmapper-tablosu)
+* [Tüketilebilir Ürün Etki Türleri](tueketilebilir-esyalar.md#consumableeffecttypes-tablosu)
+* [Anlık Etkiler](tueketilebilir-esyalar.md#consumableimpacteffects-tablosu)
+* [Zamanlı Etkiler](tueketilebilir-esyalar.md#consumabletimedeffects-tablosu)
 
 #### Consumables Tablosu
 
