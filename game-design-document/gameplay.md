@@ -8,6 +8,8 @@ description: >-
 
 ## Game Mechanics
 
+* Player mecanic
+
 
 
 ## Controls
