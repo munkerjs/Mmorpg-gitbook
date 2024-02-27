@@ -12,16 +12,17 @@
 **Destekleyici Statlar:**
 
 5. **Zehir Direnci (Poison Resistance):** Zehirli saldırılara karşı direnci belirler.
-6. **Saldırı Hızı (Attack Speed):** Saldırı hızını belirler.
-7. **Kritik Vuruş Gücü (Critical Hit Power):** Kritik vuruşların ek hasarını belirler.
-8. **Can Yenileme (Health Regeneration):** Canı zamanla yenileme hızını belirler.
-9. **Mana Yenileme (Mana Regeneration):** Mana veya enerji puanlarını zamanla yenileme hızını belirler.
-10. **Hareket Hızı (Movement Speed):** Genel hareket hızını belirler.
-11. **Büyü Gücü (Magic Power):** Büyü ve sihirli yeteneklerin gücünü belirler.
-12. **Büyü Direnci (Magic Resistance):** Düşman büyülerine karşı direnci belirler.
-13. **Enerji (Energy):** Koşu veya özel yetenekleri kullanırken harcanan enerji miktarını belirler.
-14. **Mana (Mana):** Büyü veya özel yetenekler için gerekli kaynağı belirler.
-15. **Büyü Hızı (Casting Speed):** Büyü veya özel yeteneklerin kullanım hızını belirler.
+6. **Zırh (Armor):**Giyilen zırhın dayanıklılığını belirler.
+7. **Saldırı Hızı (Attack Speed):** Saldırı hızını belirler.
+8. **Kritik Vuruş Gücü (Critical Hit Power):** Kritik vuruşların ek hasarını belirler.
+9. **Can Yenileme (Health Regeneration):** Canı zamanla yenileme hızını belirler.
+10. **Mana Yenileme (Mana Regeneration):** Mana veya enerji puanlarını zamanla yenileme hızını belirler.
+11. **Hareket Hızı (Movement Speed):** Genel hareket hızını belirler.
+12. **Büyü Gücü (Magic Power):** Büyü ve sihirli yeteneklerin gücünü belirler.
+13. **Büyü Direnci (Magic Resistance):** Düşman büyülerine karşı direnci belirler.
+14. **Enerji (Energy):** Koşu veya özel yetenekleri kullanırken harcanan enerji miktarını belirler.
+15. **Mana (Mana):** Büyü veya özel yetenekler için gerekli kaynağı belirler.
+16. **Büyü Hızı (Casting Speed):** Büyü veya özel yeteneklerin kullanım hızını belirler.
 
 ## Class
 
@@ -80,16 +81,17 @@
 2. **Dayanıklılık (Stamina):** 12
 3. **Çeviklik (Agility):** 10
 4. **Zeka (Intelligence):** 8
-5. **Zehir Direnci (Poison Resistance):** 10
-6. **Saldırı Hızı (Attack Speed):** 15
-7. **Kritik Vuruş Gücü (Critical Hit Power):** 5
-8. **Can Yenileme (Health Regeneration):** 5
-9. **Mana Yenileme (Mana Regeneration):** 0
-10. **Hareket Hızı (Movement Speed):** 20
-11. **Büyü Gücü (Magic Power):** 0
-12. **Büyü Direnci (Magic Resistance):** 0
-13. **Enerji (Energy):** 45
-14. **Büyü Hızı (Casting Speed):** 0
+5. **Zırh (Armor):15**
+6. **Zehir Direnci (Poison Resistance):** 10
+7. **Saldırı Hızı (Attack Speed):** 15
+8. **Kritik Vuruş Gücü (Critical Hit Power):** 5
+9. **Can Yenileme (Health Regeneration):** 5
+10. **Mana Yenileme (Mana Regeneration):** 0
+11. **Hareket Hızı (Movement Speed):** 15
+12. **Büyü Gücü (Magic Power):** 0
+13. **Büyü Direnci (Magic Resistance):** 0
+14. **Enerji (Energy):** 20
+15. **Büyü Hızı (Casting Speed):** 0
 
 **Yetenekler:**
 
