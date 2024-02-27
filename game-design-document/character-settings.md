@@ -70,7 +70,7 @@
 
 
 
-## Class
+## Character Stats And Skılls
 
 **Savaşçı Özellikleri ve Stat Dağıtımı**
 
