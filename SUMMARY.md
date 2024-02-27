@@ -12,4 +12,4 @@
 * [Story and Characters](game-design-document/story-and-characters.md)
 * [Graphics and Audio](game-design-document/graphics-and-audio.md)
 * [Technology](game-design-document/technology.md)
-* [Gameplay](game-design-document/gameplay.md)
+* [Character Settings](game-design-document/character-settings.md)
