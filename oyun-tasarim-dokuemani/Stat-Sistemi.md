@@ -5,7 +5,7 @@
 ## Stat Bilgileri
 
 - Maksimum stat puanı 99dur.
-- Her x seviyede bir x stat puanı kazanır.
+- Her 1 seviyede bir 3 stat puanı kazanır.
 - Maksimum seviye 80 seviyedir
 - Maksimum kazanılabilecek stat puanı 237 olacaktır.
 
